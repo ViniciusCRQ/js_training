@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;1,900&display=swap" rel="stylesheet">
+    <style>
+        html{
+            background-color: rgb(59, 153, 59);
+        }
+        header{
+            text-align: center;
+            color: rgb(255, 255, 255);
+            margin-top: 10%;
+            font-family: 'Raleway', sans-serif;
+        }
+        main{
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.474);
+            width: 400px;
+            text-align: center;
+            padding: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Raleway', sans-serif;
+            border-radius: 10px;
+        }
+        .result{
+            border: 2px solid rgba(150, 150, 150, 0.575);
+            height: 25px;
+            text-align: left;
+            width: 160px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .result p {
+            font-size: 20px;
+            margin-left: 10px;
+            margin-top: -1px;
+        }
+        button{
+            border: 1px solid rgba(0, 0, 0, 0);
+            color: white;
+            background-color: rgb(59, 153, 59) ;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <main>
+        <label for="calc">Numero 1</label>
+        <input type="number" name="calc" id="calc1">
+        <br>
+        <br>
+        <label for="operador">Operador</label>
+        <select name="sel" id="operador">
+            <option value="sub">-</option>
+            <option value="soma">+</option>
+            <option value="div">:</option>
+            <option value="mult">x</option>
+        </select>
+        <br>
+        <br>
+        <label for="calc">Numero 2</label>
+        <input type="number" name="calc" id="calc2">
+        <br>
+        <br>
+        <button id="calc-btn" onclick="calcular()">
+            Calcular
+        </button>   
+        <br>
+        <br>
+        <div class="result">
+            <p></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
