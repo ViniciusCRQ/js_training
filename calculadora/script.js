@@ -4,20 +4,28 @@
     const calcbtn = document.getElementById('calc-btn')
     calcbtn.addEventListener('click', calcular())
 
+
+
+
     console.clear()
 
+    
 function calcular(){
 
 
+    
     const operador = document.getElementById('operador')
     const numberone = Number(stringnumberone.value)
     const numbertwo = Number(stringnumbertwo.value)
     const resultado = document.querySelector('.result')
+
  
     let soma;
     let div;
     let sub;
     let mult;
+
+
 
     function somar(){
         soma = numberone + numbertwo
@@ -47,6 +55,7 @@ function calcular(){
         return mult
     }
 
+
     if( operador.value == 'soma'){
         somar();
     } else if ( operador.value == 'sub' ){
@@ -56,4 +65,7 @@ function calcular(){
     } else {
         multiplicar();
     }
+
 }
+
+
