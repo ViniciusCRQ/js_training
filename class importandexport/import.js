@@ -34,9 +34,8 @@ function adicionarjogador(){
         window.alert('Preencha todas as áreas para poder adicionar um jogador!')
     }
 
-
-
 }
+
 
 
 
