@@ -17,15 +17,12 @@ let operador = document.getElementById('operador')
     var mult;
     
 function calcular(){   
-        
-    let resultado = document.querySelector('.result')
 
     let numberone = Number(stringnumberone.value)
     let numbertwo = Number(stringnumbertwo.value)
 
     console.clear()
 
-   let operador = document.getElementById('operador')
     
     function somar(){
         soma = numberone + numbertwo
