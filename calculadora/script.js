@@ -8,6 +8,8 @@ const upbtn = document.getElementById('up-btn')
 let resultado = document.querySelector('.result')
 let numberone = Number(stringnumberone.value)
 let numbertwo = Number(stringnumbertwo.value)
+let operador = document.getElementById('operador')
+
     
     var soma;
     var div;
@@ -20,10 +22,10 @@ function calcular(){
 
     let numberone = Number(stringnumberone.value)
     let numbertwo = Number(stringnumbertwo.value)
-    
+
     console.clear()
 
-   const operador = document.getElementById('operador')
+   let operador = document.getElementById('operador')
     
     function somar(){
         soma = numberone + numbertwo
@@ -69,4 +71,20 @@ function limpar(){
     stringnumberone.value = ''
     stringnumbertwo.value = ''
 }
-   
+
+function subir(){
+    if ( stringnumberone.value == '' ){
+       window.alert('Deve-se haver um resultado!')
+    } else {
+        if ( operador.value == 'soma'){
+            stringnumberone.value = soma
+        } else if ( operador.value == 'sub' ){
+            stringnumberone.value = sub
+        } else if ( operador.value == 'div' ){
+            stringnumberone.value = div
+        } else {
+            stringnumberone.value = mult
+        }
+    }
+}
+
