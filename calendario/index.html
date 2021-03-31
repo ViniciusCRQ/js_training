@@ -11,15 +11,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body onload="inittime()" >
-    <div class="container bg-primary" id="cronometro">
+    <div class="container text-primary" id="cronometro">
         <div class="row andre">
             <div class="col-md-12">
-            <span id="timer">Horas: </span>
+            <span id="timer"></span>
             </div>  
         </div>
     </div>
     <main>
-        <div class="container" id="main-calendar" onload="showcalendar()">
+        <div class="container" id="main-calendar" onload="showcalendar()"></div>
+        <div class="container">
+          <div class="row">
+            <div class="btn">
+              <a name="" id="visu-btn" class="btn btn-primary text-white" href="#" onclick="visualizar()" role="button"><strong>Visualizar o ano inteiro</strong></a>
+            </div>
+          </div>
         </div>
     </main>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
