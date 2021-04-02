@@ -12,7 +12,7 @@ function showtime(){
     var month = time.getMonth()
     var year = time.getFullYear()   
 
-    month = 11;
+    month = 7;
 
     switch(month){
         case 0 :
@@ -211,9 +211,9 @@ function showtime(){
                             <td>6</td>
                             <td>7</td>
                             <td><a href="https://pt.wikipedia.org/wiki/Dia_Internacional_da_Mulher" class="text-warning" target="_blank"><button class="text-primary"><strong>8</strong></a></td>
-                            <td><button href="#">9</td>
-                            <td><button href="#">10</td>
-                            <td><button href="#">11</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
                         </tr>
                         <tr>
                             <td>12</td>
@@ -442,7 +442,7 @@ function showtime(){
                             <td class="text-muted">31</td>
                             <td>1</td>  
                             <td>2</td>
-                            <td>3</td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Ano-Novo" class="text-danger" target="_blank"><button><strong>3</strong></a></td>
                             <td>4</td>
                         </tr>
                         <tr>
@@ -455,7 +455,7 @@ function showtime(){
                             <td>11</td>
                         </tr>
                         <tr>
-                            <td>12</td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Ano-Novo" class="text-danger" target="_blank"><button><strong>12</strong></a></td>
                             <td>13</td>
                             <td>14</td>
                             <td>15</td>
@@ -469,7 +469,7 @@ function showtime(){
                             <td>21</td>
                             <td>22</td>
                             <td>23</td>
-                            <td>24</td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Ano-Novo" class="text-danger" target="_blank"><button><strong>24</strong></a></td>
                             <td>25</td>
                         </tr>
                         <tr>
@@ -487,7 +487,9 @@ function showtime(){
                 <div class="col-md-6 col-sm-6>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item text-white bg-danger"><strong>Feriados (Março)</strong></li>
-                    <li class="list-group-item"><strong>Dia 8</strong> - Dia internacional da mulher</li>
+                    <li class="list-group-item"><strong>Dia 3</strong> - Corpus Christi</li>
+                    <li class="list-group-item"><strong>Dia 12</strong> - Dia dos namorados</li>
+                    <li class="list-group-item"><strong>Dia 24</strong> - Dia de São João</li>
                 </ul>
                 </div>
             </div>`
@@ -528,10 +530,10 @@ function showtime(){
                             <td>5</td>
                             <td>6</td>
                             <td>7</td>
-                            <td><button href="#" class="text-primary"><strong>8</strong></td>
-                            <td><button href="#">9</td>
-                            <td><button href="#">10</td>
-                            <td><button href="#">11</td>
+                            <td>8</td>
+                            <td><a href="https://pt.wikipedia.org/wiki/Ano-Novo" class="text-primary" target="_blank"><button><strong>9</strong></a></td>
+                            <td>10</td>
+                            <td>11</td>
                         </tr>
                         <tr>
                             <td>12</td>
@@ -566,7 +568,7 @@ function showtime(){
                 <div class="col-md-6 col-sm-6>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item text-white bg-primary"><strong>Feriados (Março)</strong></li>
-                    <li class="list-group-item"><strong>Dia 8</strong> - Dia internacional da mulher</li>
+                    <li class="list-group-item"><strong>Dia 9</strong> - Dia da revolução constitucionalista</li>
                 </ul>
                 </div>
             </div>`
@@ -595,49 +597,49 @@ function showtime(){
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="text-muted">29</td>
-                            <td class="text-muted">30</td>
-                            <td class="text-muted">31</td>
                             <td>1</td>  
                             <td>2</td>
                             <td>3</td>
                             <td>4</td>
-                        </tr>
-                        <tr>
                             <td>5</td>
                             <td>6</td>
                             <td>7</td>
-                            <td><button href="#" class="text-primary"><strong>8</strong></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://pt.wikipedia.org/wiki/Dia-dos-Pais" class="text-primary" target="_blank"><button><strong>8</strong></a></td>
                             <td><button href="#">9</td>
                             <td><button href="#">10</td>
                             <td><button href="#">11</td>
-                        </tr>
-                        <tr>
                             <td>12</td>
                             <td>13</td>
                             <td>14</td>
+                        </tr>
+                        <tr>
                             <td>15</td>
                             <td>16</td>
                             <td>17</td>
                             <td>18</td>
-                        </tr>
-                        <tr>
                             <td>19</td>
                             <td>20</td>
                             <td>21</td>
+                        </tr>
+                        <tr>
                             <td>22</td>
                             <td>23</td>
                             <td>24</td>
                             <td>25</td>
-                        </tr>
-                        <tr>
                             <td>26</td>
                             <td>27</td>
                             <td>28</td>
+                        </tr>
+                        <tr>
                             <td>29</td>
                             <td>30</td>
                             <td>31</td>
                             <td class="text-muted">1</td>
+                            <td class="text-muted">2</td>
+                            <td class="text-muted">3</td>
+                            <td class="text-muted">4</td>
                         </tr>
                     </tbody>
                 </table>
@@ -645,7 +647,7 @@ function showtime(){
                 <div class="col-md-6 col-sm-6>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item text-white bg-primary"><strong>Feriados (Março)</strong></li>
-                    <li class="list-group-item"><strong>Dia 8</strong> - Dia internacional da mulher</li>
+                    <li class="list-group-item"><strong>Dia 8</strong> - Dia dos pais</li>
                 </ul>
                 </div>
             </div>`
