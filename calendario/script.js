@@ -646,7 +646,7 @@ function showtime(){
                 </div> 
                 <div class="col-md-6 col-sm-6>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item text-white bg-primary"><strong>Feriados (Março)</strong></li>
+                    <li class="list-group-item text-white bg-primary"><strong>Feriados (Agosto)</strong></li>
                     <li class="list-group-item"><strong>Dia 8</strong> - Dia dos pais</li>
                 </ul>
                 </div>
@@ -980,9 +980,9 @@ function showtime(){
         seconds = '0'+seconds
     }
 
-    let realtime = hour+':'+minute+':'+seconds+'<br> <strong>Data:</strong>Dia '+day+' de '+month+' de '+ `<strong>${year}</strong>`
+    let realtime = hour+':'+minute+':'+seconds+'<br> <strong>Data : </strong>Dia '+day+' de '+month+' de '+ `<strong>${year}</strong>`
 
-    document.getElementById('timer').innerHTML = `<strong>Horas:</strong>${realtime}`
+    document.getElementById('timer').innerHTML = `<strong>Horas : </strong>${realtime}`
 
 }
 
