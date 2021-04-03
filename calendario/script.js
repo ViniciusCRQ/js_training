@@ -1,6 +1,7 @@
 // Fazer um relógio em tempo real //
 const maincalendario = document.getElementById("main-calendar");
-
+const visualizarcalendar = document.getElementById("visu-btn")
+const maincontainer = document.getElementById("main")
 
 function showtime(){
 
@@ -1013,7 +1014,9 @@ function showtime(){
     let realtime = hour+':'+minute+':'+seconds+'<br> <strong>Data : </strong>Dia '+day+' de '+month+' de '+ `<strong>${year}</strong>`
 
     document.getElementById('timer').innerHTML = `<strong>Horas : </strong>${realtime}`
+}
 
+function visualizar(){
 }
 
 
