@@ -1,5 +1,6 @@
 //Declaração de Variáveis
 
+let monthname
 const days = []
 const weekdays = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab']
 
@@ -19,18 +20,32 @@ const tabelabody = document.createElement('tbody');
 const tabelaheadnobody = document.getElementsByTagName('thead')
 const tabelabodynobody = document.getElementsByTagName('tbody')
 
-    tabelanobody[0].appendChild(tabelahead)
-    tabelanobody[0].appendChild(tabelabody)
  
+// Nomes dos dias da semana
+
+function headercalendario(monthname) {
+    
+    var trnameheader = document.createElement('tr')
+    var thnameheader = document.createElement('th')
+    var textothnameheader = document.createTextNode(monthname)
+
+    thnameheader.appendChild(textothnameheader)
+    trnameheader.appendChild(thnameheader)
+    tabelaheadnobody[0].appendChild(trnameheader)
+
+    console.log(tabelaheadnobody[0])
+
+}
+
+tabelanobody[0].appendChild(tabelahead)
+tabelanobody[0].appendChild(tabelabody)
 const tabelatr1 = document.createElement('tr')
 const tabelatrnobody = document.getElementsByTagName('tr')
 
-    tabelatr1.id = 'TabelaNomesSemana'
-
     tabelaheadnobody[0].appendChild(tabelatr1)
 
-// Nomes dos dias da semana
-function headercalendario(){
+
+function diasdasemana(){
     for ( var i = 0; i<weekdays.length; i++){
 
         var thdiassemana = document.createElement('th')
@@ -64,8 +79,6 @@ function preenchercalendario() {
     let semana2 = document.getElementById('semana2')
     let semana3 = document.getElementById('semana3')
     let semana4 = document.getElementById('semana4')
-
-    console.log(semana0)
 
     for ( var i = 1; i<days.length; i++){
 
@@ -124,12 +137,13 @@ function preenchercalendario() {
 
 }
 
-headercalendario();
+headercalendario('Abril')
+diasdasemana();
 linhassemanas();
 preenchercalendario();
 
 
 
-console.log(tabelabodynobody[0]);
+/*console.log(tabelabodynobody[0]);
 console.log(tabelaheadnobody[0]);
-console.log(tabelanobody[0])
+console.log(tabelanobody[0]) */
