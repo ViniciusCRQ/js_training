@@ -2,6 +2,9 @@
 table {
 
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
 
 }
 
@@ -15,5 +18,12 @@ thead {
 tbody th{
 
     width: 45px;
+
+}
+
+#tr2 th{
+
+    width: 50px;
+    font-size: 15px;
 
 }

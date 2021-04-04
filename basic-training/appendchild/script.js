@@ -23,20 +23,45 @@ tabelabody.className = 'table-bordered'
 const tabelaheadnobody = document.getElementsByTagName('thead')
 const tabelabodynobody = document.getElementsByTagName('tbody')
 
- 
+
+
 // Nomes dos dias da semana
 
 function headercalendario(monthname) {
+
+    for ( let i = 1; i<3; i++ ){
+        let trheader = document.createElement('tr');
+        trheader.id = `tr`+ i
+
+        tabelaheadnobody[0].appendChild(trheader)
+    }
     
-    var trnameheader = document.createElement('tr')
+    const trheader1 = document.getElementById('tr1')
+    const trheader2 = document.getElementById('tr2')
+    console.log(trheader1)
+
     var thnameheader = document.createElement('th')
+    var anameheader = document.createElement('a')
     var textothnameheader = document.createTextNode(monthname)
 
-    thnameheader.appendChild(textothnameheader)
-    trnameheader.appendChild(thnameheader)
-    tabelaheadnobody[0].appendChild(trnameheader)
+    thnameheader.setAttribute("colspan","7")
+    anameheader.colspan = '7'
 
-    
+    anameheader.appendChild(textothnameheader)
+    thnameheader.appendChild(anameheader)
+    trheader1.appendChild(thnameheader)
+    trheader1.className = 'bg-primary text-white'
+
+    for ( var i = 0; i<weekdays.length; i++){
+
+        var thdiassemana = document.createElement('th')
+        var textothdiassemana = document.createTextNode(weekdays[i])
+
+        thdiassemana.appendChild(textothdiassemana)
+
+        trheader2.appendChild(thdiassemana)
+        trheader2.className = 'table-bordered text-primary'
+    }
 
 }
 
@@ -46,19 +71,6 @@ const tabelatr1 = document.createElement('tr')
 const tabelatrnobody = document.getElementsByTagName('tr')
 
     tabelaheadnobody[0].appendChild(tabelatr1)
-
-
-function diasdasemana(){
-    for ( var i = 0; i<weekdays.length; i++){
-
-        var thdiassemana = document.createElement('th')
-        var textothdiassemana = document.createTextNode(weekdays[i])
-
-        thdiassemana.appendChild(textothdiassemana)
-
-        tabelatrnobody[0].appendChild(thdiassemana)
-    }
-}
 
 
 // Tabelas relacionadas com as Semanas
@@ -140,13 +152,11 @@ function preenchercalendario() {
 
 }
 
-headercalendario('Abril')
-diasdasemana();
+
+headercalendario('Mês Qualquer')
 linhassemanas();
 preenchercalendario();
 
-
-
-/*console.log(tabelabodynobody[0]);
+console.log(tabelabodynobody[0]);
 console.log(tabelaheadnobody[0]);
-console.log(tabelanobody[0]) */
+console.log(tabelanobody[0]) 
