@@ -14,8 +14,11 @@ const body = document.getElementsByTagName('body')
     body[0].appendChild(tabela)
 
 const tabelanobody = document.getElementsByTagName('table');
+tabela.className = 'table-hover'
+console.log(tabela)
 const tabelahead = document.createElement('thead');
 const tabelabody = document.createElement('tbody');
+tabelabody.className = 'table-bordered'
 
 const tabelaheadnobody = document.getElementsByTagName('thead')
 const tabelabodynobody = document.getElementsByTagName('tbody')
@@ -33,7 +36,7 @@ function headercalendario(monthname) {
     trnameheader.appendChild(thnameheader)
     tabelaheadnobody[0].appendChild(trnameheader)
 
-    console.log(tabelaheadnobody[0])
+    
 
 }
 
